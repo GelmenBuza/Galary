@@ -1,0 +1,128 @@
+@font-face {
+    font-family: Nurito-reg, sans-serif;
+    font-weight: 400;
+    src: url(/assets/fonts/Nunito-Regular.ttf);
+}
+
+@font-face {
+    font-family: Nurito-bold, sans-serif;
+    font-weight: 700;
+    src: url(/assets/fonts/Nunito-Bold.ttf);
+}
+
+body {
+    font-family: Nurito;
+}
+
+.first-section {
+    margin: 0 16px;
+}
+
+section > h1 {
+    font-size: 34px;
+    font-family: Nurito-bold;
+    color: #474747;
+}
+
+section > h2 {
+    font-size: 14px;
+    font-family: Nurito-bold;
+    color: #979ea6;
+}
+
+.aplifid-filters {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
+
+.filters {
+    background: linear-gradient(270deg, #fd814a -12.71%, #fc5c4c 121.19%);
+    border-radius: 10px;
+    width: 121px;
+    height: 41px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+    box-shadow: 0px 5px 20px 0px #FD714B40;
+    color: #FFFFFF;
+}
+
+.filters > button {
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+
+.galary {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin: 16px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px 0px #0000001A;
+    display: grid;
+    grid-template-areas: 
+    "first-img second-img"
+    "first-img third-img"
+    "foot foot";
+    width: 343px;
+    height: 225px;
+}
+
+.foot-card > button {
+    width: 24px;
+    height: 24px;
+    border-radius: 5px;
+    border: none;
+    background-color: #C4C4C4;
+}
+
+.foot-card > span {
+    font-size: 18px;
+}
+
+.foot-card {
+    grid-area: foot;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 323px;
+    height: 61px;
+    padding: 0 10px;
+}
+
+.first-img-card {
+    grid-area: first-img;
+    width: 174px;
+    height: 164px;
+    object-fit: cover;
+    border: 1px solid #FFFFFF;
+    border-left: none;
+    border-top-left-radius: 10px;
+}
+
+.second-img-card {
+    grid-area: second-img;
+    width: 167px;
+    height: 82px;
+    object-fit: cover;
+    border: 1px solid #FFFFFF;
+    border-top-right-radius: 10px;
+}
+
+.third-img-card {
+    grid-area: third-img;
+    width: 167px;
+    height: 80px;
+    object-fit: cover;
+    border: 1px solid #FFFFFF;
+}
