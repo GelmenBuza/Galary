@@ -18,13 +18,13 @@ body {
     margin: 0 16px;
 }
 
-section > h1 {
+.first-section>h1 {
     font-size: 34px;
     font-family: Nurito-bold;
     color: #474747;
 }
 
-section > h2 {
+.first-section>h2 {
     font-size: 14px;
     font-family: Nurito-bold;
     color: #979ea6;
@@ -45,11 +45,11 @@ section > h2 {
     justify-content: space-between;
     align-items: center;
     padding: 0 5px;
-    box-shadow: 0px 5px 20px 0px #FD714B40;
+    box-shadow: 0 5px 20px 0 #FD714B40;
     color: #FFFFFF;
 }
 
-.filters > button {
+.filters>button {
     background-color: transparent;
     border: transparent;
     cursor: pointer;
@@ -65,17 +65,17 @@ section > h2 {
 .card {
     margin: 16px;
     border-radius: 10px;
-    box-shadow: 0px 5px 10px 0px #0000001A;
+    box-shadow: 0 5px 10px 0 #0000001A;
     display: grid;
-    grid-template-areas: 
-    "first-img second-img"
-    "first-img third-img"
-    "foot foot";
+    grid-template-areas:
+        "first-img second-img"
+        "first-img third-img"
+        "foot foot";
     width: 343px;
     height: 225px;
 }
 
-.foot-card > button {
+.foot-card>button {
     width: 24px;
     height: 24px;
     border-radius: 5px;
@@ -83,7 +83,7 @@ section > h2 {
     background-color: #C4C4C4;
 }
 
-.foot-card > span {
+.foot-card>span {
     font-size: 18px;
 }
 
@@ -125,4 +125,78 @@ section > h2 {
     height: 80px;
     object-fit: cover;
     border: 1px solid #FFFFFF;
+}
+
+.Illustation {
+    margin: 0 16px;
+}
+
+.Illustation>h1 {
+    font-size: 34px;
+    font-family: Nurito-bold;
+    color: #474747;
+}
+
+.Illustation>h2 {
+    color: #686868;
+    letter-spacing: 18%;
+    font-size: 14px;
+    font-family: Nurito-bold;
+}
+
+.horisontal {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.horisontal>div {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.horisontal span {
+    color: #979EA6;
+    font-size: 14px;
+    font-family: Nurito-bold;
+}
+
+.horisontal img {
+    width: 109px;
+    height: 72px;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 5px 10px 0 #39787A78;
+}
+
+.pictures {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 162px);
+    grid-template-rows: repeat(auto-fit, minmax(162px, 1fr));
+    margin-top: 15px;
+    gap: 20px;
+}
+
+.pictures img {
+    box-shadow: 0 10px 15px 0 #31575B61;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.big {
+    width: 343px;
+    height: 210px;
+    border-radius: 16px;
+    grid-column: span 2;
+}
+
+.half {
+    width: 162px;
+    height: 352px;
+}
+
+.small {
+    width: 162px;
+    height: 162px;
 }
