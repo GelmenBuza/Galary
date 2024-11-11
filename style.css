@@ -81,6 +81,7 @@ body {
     border-radius: 5px;
     border: none;
     background-color: #C4C4C4;
+    cursor: pointer;
 }
 
 .foot-card>span {
@@ -172,8 +173,12 @@ body {
 
 .pictures {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 162px);
-    grid-template-rows: repeat(auto-fit, minmax(162px, 1fr));
+    grid-template-areas: 
+    "first first"
+    "second third"
+    "foth third"
+    "fith six";
+    width: 344px;
     margin-top: 15px;
     gap: 20px;
 }
@@ -188,7 +193,25 @@ body {
     width: 343px;
     height: 210px;
     border-radius: 16px;
-    grid-column: span 2;
+}
+
+.first {
+    grid-area: first;
+}
+.second {
+    grid-area: second;
+}
+.third {
+    grid-area: third;
+}
+.foth {
+    grid-area: foth;
+}
+.fifth {
+    grid-area: fith;
+}
+.six {
+    grid-area: six;
 }
 
 .half {
